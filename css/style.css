@@ -112,6 +112,12 @@ img {
   line-height: 59px;
 }
 
+.third-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
 body {
   min-width: 320px;
   font-family: "Montserrat";
@@ -121,6 +127,8 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1773px;
+  border-left: 1px solid salmon;
+  border-right: 1px solid salmon;
 }
 
 /* header */
@@ -394,9 +402,6 @@ body {
 .about-right__title {
   margin: 0;
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
 }
 
 .about-right__text {
@@ -409,7 +414,7 @@ body {
 /* how-it-works */
 
 .how-it-works {
-  padding-top: 100px;
+  padding-top: 94px;
 }
 
 .how-it-works__title {
@@ -430,6 +435,21 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  transition: color 0.3s ease;
+}
+
+.how-it-works__link:focus {
+  outline: 2px solid var(--orange);
+  outline-offset: 5px;
+}
+
+.how-it-works__link:hover {
+  color: var(--orange);
+}
+
+.how-it-works__link:active {
+  color: var(--dark-orange);
+  outline: none;
 }
 
 .how-it-works__item--active {
@@ -437,6 +457,7 @@ body {
 }
 
 .how-it-works__wrapper {
+  min-height: 460px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -450,9 +471,6 @@ body {
 .how-it-works__text-title {
   margin: 0;
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
 }
 
 .how-it-works__text-descr {
@@ -463,6 +481,10 @@ body {
   margin-bottom: 18px;
 }
 
+.how-it-works__buttons {
+  align-items: center;
+}
+
 .how-it-works-btn {
   padding: 19px 38px;
   margin-right: 27px;
@@ -471,6 +493,19 @@ body {
   background-color: var(--orange);
   border-radius: 16px;
   color: var(--white);
+  transition: background-color 0.3s ease;
+}
+
+.how-it-works-btn:focus {
+  background-color: var(--light-orange);
+}
+
+.how-it-works-btn:hover {
+  background-color: var(--light-orange);
+}
+
+.how-it-works-btn:active {
+  background-color: var(--dark-orange);
 }
 
 .how-it-works-btn--empty {
@@ -481,14 +516,131 @@ body {
   border: 1px solid var(--black);
   border-radius: 16px;
   background-color: var(--white);
+  transition: background-color 0.3s ease color 0.3s ease;
+}
+
+.how-it-works-btn--empty:focus {
+  background-color: var(--grey);
+  color: var(--white);
+  border: inherit;
+}
+
+.how-it-works-btn--empty:hover {
+  background-color: var(--grey);
+  color: var(--white);
+  border: inherit;
+}
+
+.how-it-works-btn--empty:active {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .how-it-works__wrapper-image {
   padding-top: 8px;
   width: 49%;
+  height: 100%;
 }
 
 .how-it-works__img {
   width: 100%;
   object-fit: cover;
+}
+
+/* faq */
+
+.faq {
+  padding-top: 110px;
+}
+
+.faq__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.faq__item {
+  position: relative;
+  margin-top: -1px;
+  padding: 39px 0;
+  padding-right: 75px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid var(--very-light-grey);
+  transition: border-color 0.3s ease;
+}
+
+.faq__item:first-child {
+  border-color: var(--very-light-grey);
+}
+
+.faq__item:focus {
+  border-color: var(--orange);
+}
+
+.faq__item:hover {
+  border-color: var(--orange);
+}
+
+.faq__item:active svg {
+  transform: rotate(45deg);
+}
+
+.faq__item:active {
+  border-color: var(--very-light-grey);
+}
+
+.faq__item svg ellipse {
+  transition: fill 0.3s ease;
+}
+
+.faq__item svg path {
+  transition: fill 0.3s ease;
+}
+
+.faq__item:focus .faq__item-title {
+  color: var(--orange);
+}
+
+.faq__item:focus svg ellipse {
+  fill: var(--orange);
+}
+
+.faq__item:focus svg path {
+  fill: var(--white);
+}
+
+.faq__item:hover .faq__item-title {
+  color: var(--orange);
+}
+
+.faq__item:active .faq__item-title {
+  color: var(--black);
+}
+
+.faq__item:hover svg ellipse {
+  fill: var(--orange);
+}
+
+.faq__item:active svg ellipse {
+  fill: var(--very-light-grey);
+}
+
+.faq__item:hover svg path {
+  fill: var(--white);
+}
+
+.faq__item:active svg path {
+  fill: var(--black);
+}
+
+.faq__item svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+  transition: transform 0.3s ease;
+}
+
+.faq__item-title {
+  margin: 0;
+  transition: color 0.3s ease;
 }
