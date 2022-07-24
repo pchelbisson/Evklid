@@ -293,6 +293,9 @@ body {
 
 .hero__button {
   transition: background-color 0.3s ease;
+  padding: 25px 39px;
+  font-weight: 700;
+  font-size: 23px;
 }
 
 .hero__button:focus {
@@ -322,10 +325,8 @@ body {
 }
 
 .about-us__content {
-  min-height: 622px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .about-left {
@@ -333,7 +334,7 @@ body {
   min-height: 622px;
   display: flex;
   align-items: flex-end;
-  background-image: url(../img/about-us/big.jpg);
+  background-image: url(../img/about-us/Rectangle\ 2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -366,7 +367,7 @@ body {
   color: var(--white);
   border: 3px solid var(--orange);
   border-radius: 16px;
-  transition: background-color 0.3s ease border 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
 .about-left__btn:focus {
@@ -430,39 +431,39 @@ body {
   margin-right: 86px;
 }
 
-.how-it-works__link {
+.how-it-works__step {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   transition: color 0.3s ease;
 }
 
-.how-it-works__link:focus {
+.how-it-works__step:focus {
   outline: 2px solid var(--orange);
   outline-offset: 5px;
 }
 
-.how-it-works__link:hover {
+.how-it-works__step:hover {
   color: var(--orange);
 }
 
-.how-it-works__link:active {
+.how-it-works__step:active {
   color: var(--dark-orange);
   outline: none;
 }
 
-.how-it-works__item--active {
+.how-it-works__step--active {
   color: var(--orange);
 }
 
 .how-it-works__wrapper {
-  min-height: 460px;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
 }
 
 .how-it-works__wrapper-text {
+  display: flex;
+  flex-direction: column;
   max-width: 40%;
   padding: 0;
 }
@@ -536,13 +537,9 @@ body {
 }
 
 .how-it-works__wrapper-image {
+  display: flex;
   padding-top: 8px;
   width: 49%;
-  height: 100%;
-}
-
-.how-it-works__img {
-  width: 100%;
   object-fit: cover;
 }
 
