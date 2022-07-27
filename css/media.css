@@ -1,0 +1,208 @@
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 50px;
+  }
+  .about-us__content {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .about-left {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .about-right {
+    max-width: 100%;
+  }
+
+  .footer__container {
+    justify-content: space-between;
+  }
+
+  .form-wrapper {
+    max-width: 40%;
+    margin-left: 0;
+  }
+
+  .footer__info {
+    max-width: 25%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1267px) {
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__search {
+    margin-left: 0;
+  }
+
+  .footer__info {
+    display: none;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 100px;
+    padding: 27px 0;
+    margin-bottom: 39px;
+  }
+  .burger {
+    top: -3px;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 23px;
+    color: var(--black);
+    border-color: transparent;
+  }
+
+  .burger__line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: currentColor;
+  }
+
+  .burger__line:nth-child(1) {
+    top: 0;
+  }
+
+  .burger__line:nth-child(2),
+  .burger__line:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger__line:nth-child(4) {
+    bottom: 0;
+  }
+
+  .header__logo {
+    width: 150px;
+    height: 48px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .hero {
+    margin-bottom: 38px;
+  }
+
+  .hero__container {
+    background-image: none;
+  }
+
+  .hero__swiper {
+    width: 100%;
+    padding: 160px 77px;
+    background-image: url(../img/hero/hero1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 32px;
+  }
+
+  .hero__title {
+    margin-bottom: 17px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__text {
+    margin: 0;
+    margin-bottom: 61px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-us__text {
+    max-width: 100%;
+    margin-bottom: 58px;
+  }
+
+  .about-left {
+    min-height: 640px;
+  }
+
+  .about-left__text {
+    max-width: 59%;
+  }
+
+  .about-right__title {
+    line-height: 29px;
+  }
+
+  .about-right__item {
+    padding: 64px 154px 65px 316px;
+    background-position: left 76px center;
+  }
+
+  .how-it-works {
+    padding-top: 80px;
+  }
+
+  .how-it-works__title {
+    margin-bottom: 48px;
+  }
+
+  .how-it-works__list {
+    margin-bottom: 52px;
+  }
+
+  .how-it-works__wrapper-text {
+    max-width: 46%;
+    margin-right: 61px;
+  }
+
+  .how-it-works__text-descr {
+    margin-bottom: 24px;
+  }
+
+  .faq {
+    padding-top: 81px;
+    margin-bottom: 85px;
+  }
+
+  .faq__item-title {
+    max-width: 84%;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .faq__item {
+    padding: 38.5px 0;
+  }
+
+  .form-wrapper {
+    max-width: 58.5%;
+  }
+
+  .form__textarea {
+    margin-bottom: 32px;
+  }
+
+  .form__btn {
+    padding: 19px 38px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
