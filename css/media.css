@@ -206,3 +206,178 @@
     line-height: 20px;
   }
 }
+
+@media (max-width: 1023px) {
+  .header {
+    height: 69px;
+    padding: 13px 0;
+  }
+
+  .hero {
+    margin-bottom: 33px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero__swiper {
+    padding: 162px 40px;
+  }
+
+  .about-us__text {
+    margin-bottom: 54px;
+  }
+
+  .about-left {
+    min-height: 652px;
+  }
+
+  .about-left__inner {
+    padding: 36px;
+  }
+
+  .about-left__text {
+    max-width: 64%;
+  }
+
+  .about-right__item {
+    background-size: 114px 99px;
+    padding: 32px 43px 35px 169px;
+    background-position: left 39px center;
+  }
+
+  .how-it-works__list {
+    justify-content: space-between;
+    margin-bottom: 43px;
+  }
+
+  .how-it-works__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .how-it-works__wrapper-image {
+    width: 100%;
+    max-height: 292px;
+    margin-bottom: 40px;
+  }
+
+  .how-it-works__wrapper-text {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .faq {
+    padding-top: 52px;
+    margin-bottom: 108px;
+  }
+
+  .faq__title {
+    margin-bottom: 40px;
+  }
+
+  .faq__item {
+    padding: 40.5px 0;
+    margin-top: -9px;
+  }
+
+  .faq__item-title {
+    max-width: 90%;
+    line-height: 26px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+
+  .form-wrapper {
+    max-width: 81%;
+    margin-bottom: 50px;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 19px 0;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .header__logo {
+    width: 111px;
+    height: 34px;
+  }
+
+  .hero {
+    min-height: 308px;
+    margin-bottom: 60px;
+  }
+
+  .hero__swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 59px 22px;
+    border-radius: 16px;
+  }
+
+  .hero__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 33px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .hero__button {
+    width: 162px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about-us__text {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about-left {
+    background-size: 290px 200px;
+    background-position: top center;
+    border-radius: 8px;
+  }
+
+  .about-left__inner {
+    background: transparent;
+    color: var(--black);
+    padding-top: 2px;
+    flex-direction: column;
+  }
+}
