@@ -1,6 +1,12 @@
-@media (max-width: 1500px) {
+@media (max-width: 1920px) {
   .container {
     padding: 0 50px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .header__search {
+    margin-left: 85px;
   }
   .about-us__content {
     width: 100%;
@@ -33,28 +39,6 @@
 }
 
 @media (max-width: 1267px) {
-  .header__container {
-    justify-content: space-between;
-  }
-
-  .header__logo {
-    margin-right: 0;
-  }
-
-  .header__search {
-    margin-left: 0;
-  }
-
-  .footer__info {
-    display: none;
-  }
-
-  .form-wrapper {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
   .header {
     height: 100px;
     padding: 27px 0;
@@ -96,10 +80,35 @@
   .header__logo {
     width: 150px;
     height: 48px;
+    margin-right: 0;
   }
 
   .header__nav {
     display: none;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 45px;
+  }
+  .header__search {
+    margin-left: 0;
+  }
+
+  .footer__info {
+    display: none;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 50px;
   }
 
   .hero {
@@ -107,6 +116,7 @@
   }
 
   .hero__container {
+    padding-left: 0;
     background-image: none;
   }
 
@@ -181,14 +191,18 @@
     margin-bottom: 85px;
   }
 
+  .faq__item {
+    padding: 30px 0;
+  }
+
+  .faq__item:not(:nth-child(2n)) {
+    padding: 39px 0;
+  }
+
   .faq__item-title {
     max-width: 84%;
     font-size: 20px;
-    line-height: 27px;
-  }
-
-  .faq__item {
-    padding: 38.5px 0;
+    line-height: 32px;
   }
 
   .form-wrapper {
@@ -205,9 +219,16 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  .footer {
+    padding: 45px 0;
+  }
 }
 
 @media (max-width: 1023px) {
+  .container {
+    padding: 0 50px;
+  }
   .header {
     height: 69px;
     padding: 13px 0;
@@ -279,17 +300,26 @@
   }
 
   .faq__title {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   .faq__item {
-    padding: 40.5px 0;
-    margin-top: -9px;
+    padding: 0;
+    padding: 30px 0;
+    margin-top: -5px;
+  }
+
+  .faq__item:first-child {
+    padding: 39px 0;
+  }
+
+  .faq__item:last-child {
+    padding: 30px 0;
   }
 
   .faq__item-title {
-    max-width: 90%;
-    line-height: 26px;
+    max-width: 87%;
+    line-height: 32px;
   }
 
   .footer__container {
@@ -304,9 +334,155 @@
   .footer__nav {
     display: none;
   }
+
+  .footer {
+    padding: 52px 0;
+  }
 }
 
 @media (max-width: 650px) {
+  .container {
+    padding: 0 15px;
+  }
+  .header {
+    padding: 19px 0;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .header__logo {
+    width: 111px;
+    height: 34px;
+  }
+
+  .hero {
+    min-height: 308px;
+    margin-bottom: 60px;
+  }
+
+  .hero__swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 59px 22px;
+    border-radius: 16px;
+  }
+
+  .hero__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 33px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .hero__button {
+    width: 162px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about-left {
+    min-height: 438px;
+    background-size: cover;
+    border-radius: 16px;
+  }
+
+  .about-left__inner {
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+  }
+
+  .about-left__text {
+    max-width: 70%;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .about-left__btn {
+    padding: 14px 30px;
+    font-size: 13px;
+  }
+
+  .about-right__item {
+    padding: 0;
+    padding-top: 63px;
+    background-position: top left;
+    background-size: 64px 49px;
+    border: none;
+  }
+
+  .about-right__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .about-right__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-right__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-it-works__text-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .how-it-works__text-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .faq {
+    padding-top: 58px;
+    margin-bottom: 99px;
+  }
+
+  .faq__title {
+    margin-bottom: 25px;
+  }
+
+  .faq__item {
+    padding: 30px 0;
+    margin-top: -7px;
+  }
+
+  .faq__item-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .faq__item svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 453px) {
   .container {
     padding: 0 15px;
   }
@@ -369,15 +545,225 @@
   }
 
   .about-left {
+    min-height: 398px;
     background-size: 290px 200px;
-    background-position: top center;
+    background-position: top;
     border-radius: 8px;
   }
 
   .about-left__inner {
+    min-height: 191px;
+    padding: 0;
     background: transparent;
     color: var(--black);
-    padding-top: 2px;
+    align-items: baseline;
     flex-direction: column;
+  }
+
+  .about-left__text {
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--black);
+  }
+
+  .about-left__btn {
+    padding: 9px 41px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+    color: var(--orange);
+  }
+
+  .about-right__item {
+    padding: 0;
+    padding-top: 63px;
+    background-position: top left;
+    background-size: 64px 49px;
+    border: none;
+  }
+
+  .about-right__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .about-right__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-right__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-it-works {
+    padding-top: 61px;
+  }
+
+  .how-it-works__title {
+    margin-bottom: 19px;
+  }
+
+  .how-it-works__step {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how-it-works__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .how-it-works__list {
+    margin-bottom: 7px;
+  }
+
+  .how-it-works__wrapper-image {
+    min-height: 168px;
+    margin-bottom: 17px;
+  }
+
+  .how-it-works__img {
+    border-radius: 16px;
+  }
+
+  .how-it-works__text-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .how-it-works__text-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-it-works__buttons {
+    display: flex;
+  }
+
+  .how-it-works__btn {
+    margin-right: 10px;
+    padding: 12px 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+
+  .how-it-works__btn-empty {
+    padding: 12px 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+
+  .faq {
+    padding-top: 58px;
+    margin-bottom: 60px;
+  }
+
+  .faq__title {
+    margin-bottom: 23px;
+  }
+
+  .faq__item {
+    padding: 30px 0;
+    margin-top: -2px;
+  }
+
+  .faq__item:first-child {
+    padding: 30px 0;
+  }
+
+  .faq__item:not(:nth-child(2n)) {
+    padding: 30px 0;
+  }
+
+  .faq__item-title {
+    width: 242px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .faq__item svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__title {
+    margin-bottom: 19px;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form__input {
+    padding: 15px 0;
+    padding-left: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .form__textarea {
+    margin-bottom: 26px;
+    padding: 15px 0;
+    padding-left: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .form__buttons {
+    flex-direction: column;
+  }
+
+  .form__btn {
+    margin-right: 0;
+    margin-bottom: 13px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #414141;
+  }
+
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__logo {
+    width: 131px;
+    height: 42px;
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .footer__social-link svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__social-link:not(:last-child) {
+    margin-right: 12px;
   }
 }

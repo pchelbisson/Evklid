@@ -126,8 +126,9 @@ body {
 }
 
 .container {
+  padding: 0 75px;
   margin: 0 auto;
-  max-width: 1771px;
+  max-width: 2070px;
 }
 
 /* header */
@@ -313,6 +314,7 @@ body {
 }
 
 .about-us__text {
+  margin: 0;
   max-width: 70%;
   margin-bottom: 50px;
   font-weight: 400;
@@ -559,11 +561,15 @@ body {
 .faq__item {
   position: relative;
   margin-top: -1px;
-  padding: 39px 0;
+  padding: 30px 0;
   padding-right: 75px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--very-light-grey);
   transition: border-color 0.3s ease;
+}
+
+.faq__item:first-child {
+  padding: 39px 0;
 }
 
 .faq__item:first-child {
