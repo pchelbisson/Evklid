@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>Евклид. Проектные системы</title>
 </head>
 
@@ -81,17 +82,29 @@
   <main class="main">
     <section class="hero">
       <div class="container">
-        <div class="hero__container">
-          <div class="hero__swiper">
-            <h1 class="hero__title">
-              Проектные решения любой сложности
-            </h1>
-            <p class="hero__text">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
-              проектантов
-            </p>
-            <button class="hero__button btn btn-reset">Заказать расчёт</button>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/hero/hero1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/hero/slide-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/hero/slide-3.jpg" alt="">
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero__swiper">
+          <h1 class="hero__title">
+            Проектные решения любой сложности
+          </h1>
+          <p class="hero__text">
+            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+            проектантов
+          </p>
+          <button class="hero__button btn btn-reset">Заказать расчёт</button>
         </div>
       </div>
     </section>
@@ -333,6 +346,9 @@
   </footer>
   <script src="js/burger.js"></script>
   <script src="js/search.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+
 </body>
 
 </html>
