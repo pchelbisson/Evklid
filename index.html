@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
   <title>Евклид. Проектные системы</title>
 </head>
 
@@ -82,30 +83,30 @@
   <main class="main">
     <section class="hero">
       <div class="container">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./img/hero/hero1.png" alt="">
+        <div class="swiper-box">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(./img/hero/hero1.png);">
+              </div>
+              <div class="swiper-slide" style="background-image: url(./img/hero/slide-2.jpg);">
+              </div>
+              <div class="swiper-slide" style="background-image: url(./img/hero/slide-3.jpg);">
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./img/hero/slide-2.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/hero/slide-3.jpg" alt="">
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="hero__swiper">
+            <h1 class="hero__title">
+              Проектные решения любой сложности
+            </h1>
+            <p class="hero__text">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+              проектантов
+            </p>
+            <button class="hero__button btn btn-reset">Заказать расчёт</button>
+          </div>
         </div>
-        <div class="hero__swiper">
-          <h1 class="hero__title">
-            Проектные решения любой сложности
-          </h1>
-          <p class="hero__text">
-            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
-            проектантов
-          </p>
-          <button class="hero__button btn btn-reset">Заказать расчёт</button>
-        </div>
+
       </div>
     </section>
 
