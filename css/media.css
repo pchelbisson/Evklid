@@ -80,7 +80,7 @@
 
   .burger--active {
     left: -10px;
-    z-index: 1;
+    z-index: 3;
   }
 
   .burger--active .burger__line:nth-child(2) {
@@ -117,9 +117,11 @@
 
   .header__nav {
     position: absolute;
+    z-index: 2;
+
     left: 0;
     top: 0;
-    padding-top: 107px;
+    padding-top: 150px;
     min-width: 420px;
     height: 100vh;
     padding: 50px;
@@ -149,6 +151,7 @@
   }
 
   .header__nav--active {
+    z-index: 2;
     padding-top: 150px;
     visibility: visible;
     transform: none;
