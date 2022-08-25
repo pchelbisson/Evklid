@@ -503,8 +503,7 @@ body {
 }
 
 .how-it-works__step:focus {
-  outline: 2px solid var(--orange);
-  outline-offset: 5px;
+  color: var(--dark-orange);
 }
 
 .how-it-works__step:hover {
@@ -637,32 +636,21 @@ body {
 
 .faq__item {
   position: relative;
+  margin: 0;
   margin-top: -1px;
   padding: 39px 0;
   padding-right: 75px;
+  color: var(--black);
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--very-light-grey);
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-.faq__item:first-child {
-  border-color: var(--very-light-grey);
-}
-
-.faq__item:focus {
-  border-color: var(--orange);
-}
-
-.faq__item:hover {
-  border-color: var(--orange);
-}
-
-.faq__item:active svg {
-  transform: rotate(45deg);
-}
-
-.faq__item:active {
-  border-color: var(--very-light-grey);
+.faq__item-text {
+  width: 60%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .faq__item svg ellipse {
@@ -673,40 +661,29 @@ body {
   transition: fill 0.3s ease;
 }
 
-.faq__item:focus .faq__item-title {
+.faq__item:first-child {
+  border-color: var(--very-light-grey);
+}
+
+.faq__item:hover {
+  border-color: var(--orange);
   color: var(--orange);
 }
 
-.faq__item:focus svg ellipse {
-  fill: var(--orange);
+.ui-state-active .faq__item-icon svg {
+  transform: rotate(45deg);
 }
 
-.faq__item:focus svg path {
-  fill: var(--white);
-}
-
-.faq__item:hover .faq__item-title {
-  color: var(--orange);
-}
-
-.faq__item:active .faq__item-title {
-  color: var(--black);
+.faq__item:active {
+  border-color: var(--very-light-grey);
 }
 
 .faq__item:hover svg ellipse {
   fill: var(--orange);
 }
 
-.faq__item:active svg ellipse {
-  fill: var(--very-light-grey);
-}
-
 .faq__item:hover svg path {
   fill: var(--white);
-}
-
-.faq__item:active svg path {
-  fill: var(--black);
 }
 
 .faq__item svg {
@@ -715,11 +692,6 @@ body {
   top: 50%;
   margin-top: -25px;
   transition: transform 0.3s ease;
-}
-
-.faq__item-title {
-  margin: 0;
-  transition: color 0.3s ease;
 }
 
 /* footer */

@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+$(function () {
+  $("#accordion").accordion({
+    active: true,
+    collapsible: true,
+  });
+});
