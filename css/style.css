@@ -249,9 +249,43 @@ body {
 }
 
 .search-form_show {
+  z-index: 3;
   display: flex;
   visibility: visible;
   transform: none;
+}
+
+.search-form__close:focus {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+.search-form__close svg rect {
+  transition: fill 0.3s ease;
+}
+
+.search-form__close svg circle {
+  transition: stroke 0.3s ease;
+}
+
+.search-form__close:hover svg rect {
+  fill: var(--orange);
+}
+
+.search-form__close:hover svg circle {
+  stroke: var(--orange);
+}
+
+.search-form__close:active svg rect {
+  fill: var(--black);
+}
+
+.search-form__close:active svg circle {
+  stroke: var(--black);
+}
+
+.search-form__close:active {
+  outline: none;
 }
 
 .search-form__input {
