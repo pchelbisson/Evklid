@@ -47,6 +47,7 @@
   }
   .burger {
     top: -3px;
+    visibility: visible;
     position: relative;
     display: block;
     width: 30px;
