@@ -959,6 +959,47 @@ body {
   background-color: var(--dark-orange);
 }
 
+.checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox span {
+  position: relative;
+  padding-left: 16px;
+}
+
+.checkbox span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #cacaca;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.checkbox span::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.94952 1.08233L3.99977 6.03208L1.17135 3.20365' stroke='%2397EE3F' stroke-width='2'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox input:checked + span::after {
+  display: block;
+}
+
 .checkbox__text {
   font-weight: 400;
   font-size: 16px;
